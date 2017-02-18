@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>CALCULATOR</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script src="jquery-1.11.3.js"></script>
+    <script src="calc.js"></script>
+
+  </head>
+  <body>
+    <div class="container">
+	<fieldset>
+          <table style="width: 40%" id="table">
+	    <th colspan="2">Calculator</th>
+	    <tr>
+	      <td>First number:</td>
+	      <td> <input type="text" name="op1" id="op1"/> </td>
+   	    </tr>
+   	    <tr>
+	      <td>Single Operator:</td>
+	      <td> <input type="text" name="op" id="op" size="1" /> </td>
+   	    </tr>
+   	    <tr>
+	      <td>Second Numner:</td>
+	      <td> <input type="text" name="op2" id="op2"/> </td>
+	    </tr>
+	    <tr>
+	      <td> <input class="button submitButton"  type="calculate" value="calculate"/> </td>
+        <td> <input type="text" name="ans" value="0" id="ans"/> </td>
+        <td style="display:none;"> please enter correct value </td>
+	    </tr>
+	  </table>
+	</fieldset>
+    </div>
+  </body>
+</html>

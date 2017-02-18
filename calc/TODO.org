@@ -1,0 +1,20 @@
+* TODO [#A] 
+** Work Remaining
+   - BODMOS
+   - PARSE THE WHOLE STRING
+
+* TODO [#B]
+
+** Installation
+   - grunt
+   - glump 
+   - npm **
+   - nodeJS **
+   - BOOTSTRAP **
+   - required JS 
+   - mdl
+
+* TODO
+  - requst
+  - respond
+  - print the json from from URL
