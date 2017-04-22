@@ -34,7 +34,32 @@ func main() {
 	}else{
 		fmt.Println("connection successful");
 	}
-	// pool.Release_Conn(check1)
+
+	check3 = pool.Get_Conn()
+	if(check3 == nil){
+		fmt.Println("Cant get connection from pool");
+	}else{
+		fmt.Println("connection successful");
+	}
+
+	check3 = pool.Get_Conn()
+	if(check3 == nil){
+		fmt.Println("Cant get connection from pool");
+	}else{
+		fmt.Println("connection successful");
+	}
+
+	pool.Release_Conn(check3)
+	pool.Release_Conn(check2)
+	
+	check3 = pool.Get_Conn()
+	if(check3 == nil){
+		fmt.Println("Cant get connection from pool");
+	}else{
+		fmt.Println("connection successful");
+	}
+
+
 	// pool.Get_Conn()
 	// pool.Get_Conn()
 	// pool.Get_Conn()

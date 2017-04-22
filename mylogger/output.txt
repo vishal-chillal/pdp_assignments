@@ -1,0 +1,7 @@
+[Feb 18'2017at12: 4: 2]	Error	log msg is here
+[Feb 18'2017at12: 4: 2]	Fatal	log msg is here
+[Feb 18'2017at12: 7:52]	Fatal	log msg is here
+[Feb 18'2017at12: 8: 8]	Info	log msg is here
+[Feb 18'2017at12: 8: 8]	Warning	log msg is here
+[Feb 18'2017at12: 8: 8]	Error	log msg is here
+[Feb 18'2017at12: 8: 8]	Fatal	log msg is here

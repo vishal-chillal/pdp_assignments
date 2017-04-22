@@ -7,7 +7,7 @@ _"github.com/mattn/go-sqlite3"
 )
 var db_path string
 var con_size,pull,push,req int
-var connection_channel = make([]*sql.DB, 4)
+var connection_channel
 var busy_connection = make([]int ,4)
 var mu sync.Mutex
 
@@ -15,6 +15,7 @@ func Init(path string) int {
 	db_path = path
 	con_size = 4
 	push,req = -1,-1
+	connection_channel = make([]*sql.DB, 4)
 	return Insert_conn(con_size)
 }
 
@@ -34,7 +35,6 @@ func Insert_conn(num int) int {
 func make_connection(i int) *sql.DB {
 	db, err := sql.Open("sqlite3", db_path)
 	if (err != nil) {
-		db.Close()
 		return nil
 	}
 	return db

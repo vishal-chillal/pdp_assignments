@@ -53,11 +53,10 @@ function calculate(expression){
 				ans = expression[0]*expression[1];
 			}
 			else if(expression[2] == '+'){
-				ans = expression[0]+expression[1];
+				ans = Number(expression[0])+ Number(expression[1]);
 			}
 			else if(expression[2] == '-'){
-				ans = expression[0]-expression[1];
-
+				ans = expression[0] - expression[1];
 			}
 			else if(expression[2] == '^'){
 				ans = expression[0]^expression[1];
